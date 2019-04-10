@@ -13,8 +13,8 @@ public class Main {
 //        System.out.println(f1.getFlightNumber());
         System.out.println(f1.getAirCraftModel());
 
-//        Boeing77 boeing77 = new Boeing77();
-//        Flight <Boeing77> f2 = new Flight<Boeing77>("LO12345", boeing77);
+//        Boeing777 boeing77 = new Boeing777();
+//        Flight <Boeing777> f2 = new Flight<Boeing777>("LO12345", boeing77);
 //
 //        System.out.println("Boeing:");
 //        System.out.println(f2.getAirline());

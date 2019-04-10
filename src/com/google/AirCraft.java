@@ -1,14 +1,15 @@
 package com.google;
 
-public class AirCraft {
+import java.util.List;
+import java.util.Map;
 
-    //private int numberOfSeats;
+public interface AirCraft {
+    
+    public int getNumSeats();
 
+    public Map<String, List> seatingPlan();
 
-    public int getNumSeats() {
-//        Map<String, List> plan = seatingPlan();
-        return 100;
-    }
+    public String getModel();
 
 
 }
