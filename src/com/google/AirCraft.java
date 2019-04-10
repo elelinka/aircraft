@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface AirCraft {
-    
+
     public int getNumSeats();
 
     public Map<String, List> seatingPlan();

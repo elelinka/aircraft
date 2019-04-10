@@ -1,27 +1,38 @@
 package com.google;
 
-public class Flight<T> {
+import java.util.List;
+import java.util.Map;
 
-        private String flightNumber;
-    private T airCraft;
+public class Flight {
 
-
-//    public Flight(String flightNumber, T airCraft) {
-//        this.flightNumber = flightNumber;
-//        this.airCraft = airCraft;
-//    }
+    private String flightNumber;
+    private AirCraft airCraft;
 
 
-//    public String getAirline() {
-//        return flightNumber.substring(0, 2);
-//    }
-//
-//    public int getFlightNumber() {
-//        return Integer.parseInt(flightNumber.substring(2));
-//    }
+    public Flight(String flightNumber, AirCraft airCraft) {
+        this.flightNumber = flightNumber;
+        this.airCraft = airCraft;
+    }
+
+
+    public String getAirLine() {
+        return flightNumber.substring(0, 2);
+    }
+
+    public int getFlightNumber() {
+        return Integer.parseInt(flightNumber.substring(2));
+    }
 
     public String getAirCraftModel() {
         return airCraft.getModel();
+    }
+
+    public int getNumberOfSeats() {
+        return airCraft.getNumSeats();
+    }
+
+    public Map<String, List> getPlanOfSeats() {
+        return airCraft.seatingPlan();
     }
 
 
